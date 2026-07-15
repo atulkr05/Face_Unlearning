@@ -1,0 +1,5 @@
+track,dataset,set,forget_id,retain_ids,selection_note
+face,CelebA,Face Set 1,3422,5230;5239;1539,Organizer-provided public validation group
+face,CelebA,Face Set 2,3376,3602;608;7405,Organizer-provided public validation group
+speech,LibriTTS dev-clean,Speech Set 1,84,5895;3853;5338,"Female, English, clean-development similarity cohort"
+speech,LibriTTS dev-clean,Speech Set 2,6241,6295;2428;3752,"Male, English, clean-development similarity cohort"

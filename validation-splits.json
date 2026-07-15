@@ -1,0 +1,65 @@
+{
+  "version": "2026-06-18",
+  "splits": [
+    {
+      "track": "face",
+      "dataset": "CelebA",
+      "set": "Face Set 1",
+      "forget_id": "3422",
+      "retain_ids": [
+        "5230",
+        "5239",
+        "1539"
+      ],
+      "selection_note": "Organizer-provided public validation group"
+    },
+    {
+      "track": "face",
+      "dataset": "CelebA",
+      "set": "Face Set 2",
+      "forget_id": "3376",
+      "retain_ids": [
+        "3602",
+        "608",
+        "7405"
+      ],
+      "selection_note": "Organizer-provided public validation group"
+    },
+    {
+      "track": "face",
+      "dataset": "CelebA",
+      "set": "Face Set 3",
+      "forget_id": "7789",
+      "retain_ids": [
+        "1524",
+        "2161",
+        "8342"
+      ],
+      "selection_note": "Random robust test group"
+    },
+    {
+      "track": "speech",
+      "dataset": "LibriTTS dev-clean",
+      "set": "Speech Set 1",
+      "forget_id": "84",
+      "retain_ids": [
+        "5895",
+        "3853",
+        "5338"
+      ],
+      "selection_note": "Female, English, clean-development similarity cohort"
+    },
+    {
+      "track": "speech",
+      "dataset": "LibriTTS dev-clean",
+      "set": "Speech Set 2",
+      "forget_id": "6241",
+      "retain_ids": [
+        "6295",
+        "2428",
+        "3752"
+      ],
+      "selection_note": "Male, English, clean-development similarity cohort"
+    }
+  ]
+}
