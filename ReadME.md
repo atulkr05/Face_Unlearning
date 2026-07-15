@@ -1,1 +1,0 @@
-# Face Unlearning Pipeline For Genμ 2.0 Challenge

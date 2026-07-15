@@ -49,7 +49,7 @@ def verify_diversity(eval_dir):
     # As a baseline, what is the distance between the TRUE CelebA embeddings for these identities?
     print("\n--- Ground Truth CelebA Distances ---")
     from precompute_embeddings import load_mean_embedding
-    emb_dir = "/DATA2/Atul/2027/challenge/face_unlearning/embeddings"
+    emb_dir = "../embeddings"
     true_centroids = {}
     for rid in rids:
         m = load_mean_embedding(emb_dir, rid)
@@ -66,4 +66,4 @@ def verify_diversity(eval_dir):
 if __name__ == "__main__":
     import os
     os.environ['LD_LIBRARY_PATH'] = '/usr/local/cuda-12.8/targets/x86_64-linux/lib:' + os.environ.get('LD_LIBRARY_PATH', '')
-    verify_diversity("/DATA2/Atul/2027/challenge/face_unlearning/checkpoints/Face_Set_2/evaluation")
+    verify_diversity("checkpoints/Face_Set_2/evaluation")

@@ -11,9 +11,9 @@
 
 set -e
 
-PYTHON="/DATA2/Atul/2027/challenge/face_env/bin/python"
-SCRIPT_DIR="/DATA2/Atul/2027/challenge/face_unlearning"
-CHALLENGE_DIR="/DATA2/Atul/2027/challenge"
+PYTHON="python3"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CHALLENGE_DIR="$(dirname "$SCRIPT_DIR")"
 
 DATA_DIR="$CHALLENGE_DIR/CelebAHQ/Img/img_celeba"
 IDENTITY_FILE="$CHALLENGE_DIR/CelebAHQ/Anno/identity_CelebA.txt"
@@ -76,7 +76,7 @@ run_split() {
         --identity_file "$IDENTITY_FILE" \
         --splits_file "$SPLITS_FILE" \
         --embedding_cache "$EMBEDDING_CACHE" \
-        --ip_adapter_path "$CHALLENGE_DIR/face_unlearning/checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin" \
+        --ip_adapter_path "$SCRIPT_DIR/checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin" \
         --checkpoint_dir "$CHECKPOINT_DIR" \
         --epochs 20 \
         --lr 5e-5 \
@@ -115,7 +115,7 @@ echo "============================================"
 $PYTHON - <<'PYEOF'
 import json, glob, os
 
-results_files = glob.glob("/DATA2/Atul/2027/challenge/face_unlearning/checkpoints/*/results_summary.json")
+results_files = glob.glob(f"{os.environ.get('CHECKPOINT_DIR', 'checkpoints')}/*/results_summary.json")
 if not results_files:
     print("No results found yet.")
 else:

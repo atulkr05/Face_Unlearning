@@ -431,9 +431,9 @@ def load_attribute_labels(
 
 if __name__ == "__main__":
     # Quick smoke test
-    splits_path = "/DATA2/Atul/2027/challenge/face_unlearning/validation-splits.json"
-    img_dir = "/DATA2/Atul/2027/challenge/CelebAHQ/Img/img_celeba"
-    identity_file = "/DATA2/Atul/2027/challenge/CelebAHQ/Anno/identity_CelebA.txt"
+    splits_path = "validation-splits.json"
+    img_dir = "../CelebAHQ/Img/img_celeba"
+    identity_file = "../CelebAHQ/Anno/identity_CelebA.txt"
 
     if os.path.exists(identity_file):
         print("Testing CelebAFlatIdentityDataset...")

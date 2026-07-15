@@ -228,16 +228,16 @@ def load_mean_embedding(cache_dir: str, identity_id: str) -> Optional[np.ndarray
 def parse_args():
     parser = argparse.ArgumentParser(description="Precompute ArcFace embeddings for CelebA identities")
     parser.add_argument("--img_dir", type=str,
-                        default="/DATA2/Atul/2027/challenge/CelebAHQ/Img/img_celeba",
+                        default="../CelebAHQ/Img/img_celeba",
                         help="Path to flat CelebA image directory")
     parser.add_argument("--identity_file", type=str,
-                        default="/DATA2/Atul/2027/challenge/CelebAHQ/Anno/identity_CelebA.txt",
+                        default="../CelebAHQ/Anno/identity_CelebA.txt",
                         help="Path to identity_CelebA.txt")
     parser.add_argument("--identity_ids", nargs="+", type=str,
                         default=["3422", "5230", "5239", "1539", "3376", "3602", "608", "7405"],
                         help="CelebA identity IDs to precompute embeddings for")
     parser.add_argument("--output_dir", type=str,
-                        default="/DATA2/Atul/2027/challenge/face_unlearning/embeddings",
+                        default="embeddings",
                         help="Directory to save .npy embedding caches")
     parser.add_argument("--model_name", type=str, default="buffalo_l",
                         choices=["buffalo_l", "antelopev2"],

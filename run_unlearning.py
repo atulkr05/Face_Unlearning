@@ -400,17 +400,17 @@ def parse_args():
     p = argparse.ArgumentParser(description="IP-Adapter-FaceID Identity Unlearning")
     p.add_argument("--split_name", type=str, default="Face Set 1")
     p.add_argument("--splits_file", type=str,
-                   default="/DATA2/Atul/2027/challenge/face_unlearning/validation-splits.json")
+                   default="validation-splits.json")
     p.add_argument("--img_dir", type=str,
-                   default="/DATA2/Atul/2027/challenge/CelebAHQ/Img/img_celeba")
+                   default="../CelebAHQ/Img/img_celeba")
     p.add_argument("--identity_file", type=str,
-                   default="/DATA2/Atul/2027/challenge/CelebAHQ/Anno/identity_CelebA.txt")
+                   default="../CelebAHQ/Anno/identity_CelebA.txt")
     p.add_argument("--embedding_cache", type=str,
-                   default="/DATA2/Atul/2027/challenge/face_unlearning/embeddings")
+                   default="embeddings")
     p.add_argument("--ip_adapter_path", type=str,
-                   default="/DATA2/Atul/2027/challenge/face_unlearning/checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin")
+                   default="checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin")
     p.add_argument("--checkpoint_dir", type=str,
-                   default="/DATA2/Atul/2027/challenge/face_unlearning/checkpoints")
+                   default="checkpoints")
     p.add_argument("--epochs", type=int, default=20)
     p.add_argument("--lr", type=float, default=5e-5)
     p.add_argument("--batch_size", type=int, default=2)

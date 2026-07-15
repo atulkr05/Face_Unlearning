@@ -51,10 +51,10 @@ if __name__ == "__main__":
     import os
     os.environ['LD_LIBRARY_PATH'] = '/usr/local/cuda-12.8/targets/x86_64-linux/lib:' + os.environ.get('LD_LIBRARY_PATH', '')
     
-    splits_file = "/DATA2/Atul/2027/challenge/face_unlearning/validation-splits.json"
-    emb_dir = "/DATA2/Atul/2027/challenge/face_unlearning/embeddings"
-    ip_adapter_path = "/DATA2/Atul/2027/challenge/face_unlearning/checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin"
-    out_dir = "/DATA2/Atul/2027/challenge/face_unlearning/baseline_eval"
+    splits_file = "validation-splits.json"
+    emb_dir = "embeddings"
+    ip_adapter_path = "checkpoints/ip_adapter_faceid/ip-adapter-faceid_sd15.bin"
+    out_dir = "baseline_eval"
     
     evaluate_baseline("Face Set 3", splits_file, emb_dir, ip_adapter_path, out_dir)
     evaluate_baseline("Face Set 3", splits_file, emb_dir, ip_adapter_path, out_dir)

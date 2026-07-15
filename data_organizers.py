@@ -7,11 +7,11 @@ from collections import defaultdict
 # Paths
 # -------------------------------------------------------
 
-IMG_DIR = Path("/DATA2/Atul/2027/challenge/CelebAHQ/Img/img_celeba")
-IDENTITY_FILE = Path("/DATA2/Atul/2027/challenge/CelebAHQ/Anno/identity_CelebA.txt")
-SPLITS_FILE = Path("/DATA2/Atul/2027/challenge/face_unlearning/validation-splits.json")
+IMG_DIR = Path("../CelebAHQ/Img/img_celeba")
+IDENTITY_FILE = Path("../CelebAHQ/Anno/identity_CelebA.txt")
+SPLITS_FILE = Path("validation-splits.json")
 
-OUTPUT_DIR = Path("/DATA2/Atul/2027/challenge/organized_validation_images")
+OUTPUT_DIR = Path("../organized_validation_images")
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
