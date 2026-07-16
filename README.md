@@ -12,8 +12,8 @@ We achieved this by jointly fine-tuning the UNet cross-attention LoRA adapters a
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/face_unlearning_challenge.git
-   cd face_unlearning_challenge
+   git clone https://github.com/atulkr05/Face_Unlearning.git
+   cd Face_Unlearning
    ```
 
 2. **Set up the Python environment**
