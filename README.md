@@ -6,9 +6,7 @@ We achieved this by jointly fine-tuning the UNet cross-attention LoRA adapters a
 
 ## Hardware and Runtime Requirements
 - **OS**: Linux (tested on Ubuntu 22.04)
-- **GPU**: NVIDIA GPU with at least 24GB VRAM (tested on NVIDIA H200 NVL)
-- **RAM**: 32GB+
-- **CUDA**: 12.1+
+- **GPU**: NVIDIA GPU with of 20GB VRAM (tested on NVIDIA A6000)
 
 ## Installation and Environment Setup
 
